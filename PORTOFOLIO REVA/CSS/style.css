@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FCF9EC;
+    color: #00105B;
+}
+
+.reva_container {
+    width: 88%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+#reva_header {
+    background-color: #FCF9EC;
+    box-shadow: 0 2px 10px rgba(0, 16, 91, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.reva_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+}
+
+.reva_logo {
+    color: #6061B6;
+    font-size: 21px;
+}
+
+.reva_logo span {
+    color: #00105B;
+}
+
+.reva_menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.reva_menu a {
+    color: #00105B;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.reva_menu a:hover {
+    color: #6061B6;
+}
+
+.reva_hero {
+    background: linear-gradient(120deg, #C9B5E0, #6061B6);
+    min-height: 290px;
+    overflow: hidden;
+    position: relative;
+}
+
+.reva_hero_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 290px;
+}
+
+.reva_hero_text {
+    width: 58%;
+    padding: 25px 0;
+}
+
+.reva_hero_text > p:first-child {
+    font-size: 19px;
+    color: #00105B;
+}
+
+.reva_hero_text h1 {
+    font-size: 43px;
+    color: #00105B;
+    margin: 3px 0;
+}
+
+.reva_hero_text h1 span {
+    color: #FCF9EC;
+}
+
+.reva_hero_text h3 {
+    font-size: 17px;
+    font-weight: normal;
+    color: #00105B;
+    margin-bottom: 12px;
+}
+
+.reva_description {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 470px;
+    color: #FCF9EC;
+}
+
+.reva_hero_button {
+    margin-top: 18px;
+    display: flex;
+    gap: 12px;
+}
+
+.reva_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00105B;
+    color: #FCF9EC;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.reva_btn:hover {
+    background-color: #6061B6;
+}
+
+.reva_btn_outline {
+    background-color: transparent;
+    color: #00105B;
+    border: 1px solid #00105B;
+}
+
+.reva_btn_outline:hover {
+    background-color: #00105B;
+    color: #FCF9EC;
+}
+
+.reva_hero_image {
+    width: 38%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.reva_laptop {
+    width: 220px;
+    height: 145px;
+    background: linear-gradient(145deg, #00105B, #6061B6);
+    border: 7px solid #6061B6;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 16, 91, 0.2);
+    transform: perspective(500px) rotateY(-8deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #C9B5E0;
+}
+
+.reva_laptop span {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.reva_laptop p {
+    font-size: 10px;
+    color: #FCF9EC;
+    margin-top: 8px;
+}
+
+.reva_plant {
+    font-size: 55px;
+}
+
+.reva_about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding-top: 28px;
+}
+
+.reva_about_text {
+    flex: 1;
+}
+
+.reva_about h2,
+.reva_skills h2,
+.reva_projects h2 {
+    font-size: 23px;
+    color: #00105B;
+    margin-bottom: 13px;
+    border-bottom: 2px solid #6061B6;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.reva_about_text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 9px;
+    color: #6061B6;
+    max-width: 650px;
+}
+
+.reva_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 17px;
+}
+
+.reva_info span {
+    font-size: 12px;
+    color: #00105B;
+}
+
+.reva_about_image {
+    width: 210px;
+    height: 170px;
+    background-color: #C9B5E0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.reva_about_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reva_skills {
+    padding-top: 25px;
+}
+
+.reva_skill_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.reva_skill_card {
+    background-color: #FCF9EC;
+    border: 1px solid #C9B5E0;
+    border-radius: 7px;
+    padding: 13px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #00105B;
+    transition: 0.3s;
+}
+
+.reva_skill_card:hover {
+    background-color: #C9B5E0;
+    transform: translateY(-3px);
+}
+
+.reva_skill_card span {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.reva_html,
+.reva_css,
+.reva_mysql,
+.reva_cpp {
+    color: #6061B6;
+}
+
+/* Projects */
+.reva_projects {
+    padding-top: 27px;
+    padding-bottom: 25px;
+}
+
+.reva_project_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+}
+
+.reva_project_card {
+    border: 1px solid #C9B5E0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #FCF9EC;
+    transition: 0.3s;
+}
+
+.reva_project_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 16, 91, 0.12);
+}
+
+.reva_project_image {
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.reva_project_one,
+.reva_project_two,
+.reva_project_three,
+.reva_project_four {
+    background: linear-gradient(135deg, #6061B6, #C9B5E0);
+}
+
+.reva_project_info {
+    padding: 12px;
+}
+
+.reva_project_info h3 {
+    font-size: 15px;
+    color: #00105B;
+    margin-bottom: 6px;
+}
+
+.reva_project_info p {
+    font-size: 12px;
+    color: #6061B6;
+    line-height: 1.5;
+    min-height: 40px;
+}
+
+.reva_project_info a {
+    display: inline-block;
+    margin-top: 9px;
+    font-size: 12px;
+    color: #6061B6;
+    text-decoration: none;
+}
+
+.reva_project_info a:hover {
+    color: #00105B;
+    text-decoration: underline;
+}
+
+.reva_footer {
+    background-color: #00105B;
+    color: #FCF9EC;
+    padding: 18px 0 10px;
+}
+
+.reva_footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.reva_footer_content h3 {
+    font-size: 16px;
+}
+
+.reva_footer_content p {
+    font-size: 12px;
+    color: #C9B5E0;
+}
+
+.reva_contact {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.reva_contact span {
+    font-size: 11px;
+    color: #C9B5E0;
+}
+
+.reva_copyright {
+    border-top: 1px solid #6061B6;
+    margin-top: 15px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 11px;
+    color: #C9B5E0;
+}
